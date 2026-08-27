@@ -15,18 +15,18 @@ export const modelsData: MotorcycleModel[] = [
       ru: 'ELDOSH EL-200 CC — сбалансированная модель с оптимальным соотношением тяги, грузоподъемности и экономичности. Оснащен усиленным 200-кубовым двигателем с водяным охлаждением, усиленной рамной конструкцией и самосвальным кузовом.',
       uz: 'ELDOSH EL-200 CC — tortish kuchi, yuk ko‘tarish va tejamkorlikning ideal muvozanatiga ega model. Suv bilan sovutiluvchi 200 sm³ dvigatel, kuchaytirilgan po‘lat rama va samosval kuzov bilan jihozlangan.'
     },
-    primaryImage: '/ELDOSH EL-200 CC.png',
+    primaryImage: '/ELDOSH%20EL-200%20CC.png',
     gallery: [
       {
         id: 'img-1',
         label: { ru: 'Официальный трицикл ELDOSH EL 200 (Синий)', uz: 'ELDOSH EL 200 rasmiy trisikli (Ko‘k)' },
-        url: '/ELDOSH EL-200 CC.png',
+        url: '/ELDOSH%20EL-200%20CC.png',
         tag: 'Front View'
       },
       {
         id: 'img-2',
         label: { ru: 'Усиленный кузов 2200×1350×460 мм', uz: 'Kuchaytirilgan kuzov 2200×1350×460 mm' },
-        url: '/ELDOSH EL-200 CC.png',
+        url: '/ELDOSH%20EL-200%20CC.png',
         tag: 'Cargo Bed'
       }
     ],
@@ -82,18 +82,18 @@ export const modelsData: MotorcycleModel[] = [
       ru: 'Модель ELDOSH EL-200 M CC создана для практичных задач: перевозки грузов, строительных материалов и урожая. Оснащена прямоугольной трубчатой сварной рамой, стальными дугами безопасности с двух сторон, лобовым стеклом и экономичным 200 см³ двигателем с воздушным охлаждением.',
       uz: `ELDOSH EL-200 M CC modeli amaliy vazifalar uchun yaratilgan: yuklar, qurilish mollari va hosil tashish. To'g'ri to'rtburchak quvurli payvandlangan rama, ikki tomonlama po'lat xavfsizlik dugalari, old oyna va havo bilan sovutiluvchi 200 sm³ tejamkor dvigatel bilan jihozlangan.`
     },
-    primaryImage: '/ELDOSH EL-200 M CC.png',
+    primaryImage: '/ELDOSH%20EL-200%20M%20CC.png',
     gallery: [
       {
         id: 'hd-1',
         label: { ru: 'ELDOSH EL-200 M CC', uz: `ELDOSH EL-200 M CC` },
-        url: '/ELDOSH EL-200 M CC.png',
+        url: '/ELDOSH%20EL-200%20M%20CC.png',
         tag: 'Main View'
       },
       {
         id: 'hd-2',
         label: { ru: 'Кузов 1900×1200×475 мм', uz: 'Kuzov 1900×1200×475 mm' },
-        url: '/ELDOSH EL-200 M CC.png',
+        url: '/ELDOSH%20EL-200%20M%20CC.png',
         tag: 'Cargo Bed'
       }
     ],
