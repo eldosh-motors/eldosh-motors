@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Building2, Award, Users, Zap, Shield, MapPin, CheckCircle2 } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
+import { getImageUrl } from '../../utils/getImageUrl';
 
 const stats = [
   { value: '20+', label: { ru: 'Лет на рынке', uz: 'Yillik tajriba' } },
@@ -114,7 +115,7 @@ export const AboutSection: React.FC = () => {
             {/* Photo */}
             <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
               <img
-                src="/eldosh-el200.jpg"
+                src={getImageUrl('/ELDOSH-EL-200-CC.png')}
                 alt="ELDOSH MOTORS — производство"
                 className="w-full h-56 object-cover object-center"
               />

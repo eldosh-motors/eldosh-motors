@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { MapPin, Phone, Clock, Search, Navigation, Building, CheckCircle2, PhoneCall } from 'lucide-react';
 import { dealersData } from '../../data/dealers';
 import { useLanguage } from '../../context/LanguageContext';
+import { getImageUrl } from '../../utils/getImageUrl';
 
 // Точные координаты охвата карты Узбекистана
 // С учетом реальных пропорций географической карты:
@@ -210,7 +211,7 @@ export const DealersSection: React.FC = () => {
               {/* Exact Geographical Map of Uzbekistan */}
               {!imgError ? (
                 <img
-                  src="/uzbekistan-map.png"
+                  src={getImageUrl('/uzbekistan-map.png')}
                   alt="Карта Узбекистана"
                   onError={() => setImgError(true)}
                   className="absolute inset-0 w-full h-full object-contain p-2 opacity-85 filter brightness-95 contrast-105 pointer-events-none"

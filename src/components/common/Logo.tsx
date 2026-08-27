@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
+import { getImageUrl } from '../../utils/getImageUrl';
 
 interface LogoProps {
   className?: string;
@@ -27,12 +28,12 @@ export const Logo: React.FC<LogoProps> = ({
       {/* If full banner image loads successfully, show it directly */}
       {!loadFailed ? (
         <img
-          src="/logo-full.png"
+          src={getImageUrl('/logo-full.png')}
           alt="ELDOSH MOTORS"
           onError={(e) => {
             const img = e.target as HTMLImageElement;
             if (img.src.indexOf('logo.png') === -1) {
-              img.src = '/logo.png';
+              img.src = getImageUrl('/logo.png');
             } else {
               setLoadFailed(true);
             }
