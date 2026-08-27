@@ -51,7 +51,7 @@ if %errorlevel% neq 0 (
 echo.
 echo ===================================================
 echo   SUCCESS! Site is published on GitHub Pages!
-echo   Your URL: https://YOUR_USERNAME.github.io/eldosh-sayt/
+echo   Your URL: https://eldosh-motors.github.io/ELDOSH-SAYT/
 echo ===================================================
 echo.
 pause
