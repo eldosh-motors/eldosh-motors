@@ -11,7 +11,10 @@ export const getImageUrl = (path: string): string => {
   if (path.startsWith('http://') || path.startsWith('https://')) {
     return path;
   }
-  const base = import.meta.env.BASE_URL || '/';
+  // Safely resolve Vite BASE_URL or fallback
+  const base = ((import.meta as unknown as { env?: { BASE_URL?: string } }).env?.BASE_URL) || '/ELDOSH-SAYT/';
+  const cleanBase = base.endsWith('/') ? base : `${base}/`;
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-  return `${base}${cleanPath}`;
+  return `${cleanBase}${cleanPath}`;
 };
+

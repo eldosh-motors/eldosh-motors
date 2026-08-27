@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set "PATH=%SystemRoot%\System32;%SystemRoot%;C:\Program Files\nodejs;%LOCALAPPDATA%\Programs\nodejs;%APPDATA%\npm;%PATH%"
+set "PATH=%SystemRoot%\System32;%SystemRoot%;C:\Program Files\nodejs;%LOCALAPPDATA%\Programs\nodejs;%APPDATA%\npm;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;%LOCALAPPDATA%\GitHubDesktop\app-*\resources\app\git\cmd;%LOCALAPPDATA%\Programs\Git\bin;%PATH%"
 
 echo ===================================================
 echo   ELDOSH MOTORS - Deploy to GitHub Pages
