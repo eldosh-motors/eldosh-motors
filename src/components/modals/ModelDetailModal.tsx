@@ -5,6 +5,7 @@ import { MotorcycleModel } from '../../types';
 import { useLanguage } from '../../context/LanguageContext';
 import { useModal } from '../../context/ModalContext';
 import { FullscreenImageViewer } from './FullscreenImageViewer';
+import { getImageUrl } from '../../utils/getImageUrl';
 
 interface ModelDetailModalProps {
   model: MotorcycleModel | null;
@@ -68,7 +69,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({ model, onClo
                 <div className="lg:col-span-7 space-y-3">
                   <div className="relative aspect-[16/10] bg-eldosh-graphite rounded-lg overflow-hidden border border-white/10 group">
                     <img
-                      src={currentGalleryItem.url}
+                      src={getImageUrl(currentGalleryItem.url)}
                       alt={currentGalleryItem.label[language]}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
@@ -98,7 +99,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({ model, onClo
                             : 'border-white/15 opacity-60 hover:opacity-100'
                         }`}
                       >
-                        <img src={item.url} alt={item.label[language]} className="w-full h-full object-cover" />
+                        <img src={getImageUrl(item.url)} alt={item.label[language]} className="w-full h-full object-cover" />
                       </button>
                     ))}
                   </div>

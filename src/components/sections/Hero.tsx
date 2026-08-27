@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, ChevronLeft, Award, ShieldCheck } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useModal } from '../../context/ModalContext';
+import { getImageUrl } from '../../utils/getImageUrl';
 
 const slides = [
   {
@@ -73,7 +74,7 @@ export const Hero: React.FC = () => {
         <AnimatePresence initial={false} custom={direction}>
           <motion.img
             key={current}
-            src={slides[current].img}
+            src={getImageUrl(slides[current].img)}
             alt={slides[current].model}
             custom={direction}
             variants={{

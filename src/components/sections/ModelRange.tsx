@@ -5,6 +5,7 @@ import { modelsData } from '../../data/models';
 import { MotorcycleModel } from '../../types';
 import { useLanguage } from '../../context/LanguageContext';
 import { useModal } from '../../context/ModalContext';
+import { getImageUrl } from '../../utils/getImageUrl';
 
 export const ModelRange: React.FC = () => {
   const { language, t } = useLanguage();
@@ -79,7 +80,7 @@ export const ModelRange: React.FC = () => {
                 {/* Image Container with Hover zoom */}
                 <div className="relative aspect-[16/11] bg-black/40 overflow-hidden cursor-pointer" onClick={() => openModelDetail(model)}>
                   <img
-                    src={model.primaryImage}
+                    src={getImageUrl(model.primaryImage)}
                     alt={model.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-108"
                     loading="lazy"
