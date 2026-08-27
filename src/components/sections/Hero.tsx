@@ -6,12 +6,12 @@ import { useModal } from '../../context/ModalContext';
 
 const slides = [
   {
-    img: '/ELDOSH%20EL-200%20CC.png',
+    img: '/ELDOSH-EL-200-CC.png',
     model: 'ELDOSH EL-200 CC',
     tag: { ru: 'Флагманская модель', uz: 'Asosiy model' },
   },
   {
-    img: '/ELDOSH%20EL-200%20M%20CC.png',
+    img: '/ELDOSH-EL-200-M-CC.png',
     model: 'ELDOSH EL-200 M CC',
     tag: { ru: 'Новинка 2026', uz: 'Yangilik 2026' },
   },
