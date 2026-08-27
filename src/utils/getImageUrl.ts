@@ -12,9 +12,10 @@ export const getImageUrl = (path: string): string => {
     return path;
   }
   // Safely resolve Vite BASE_URL or fallback
-  const base = ((import.meta as unknown as { env?: { BASE_URL?: string } }).env?.BASE_URL) || '/ELDOSH-SAYT/';
+  const base = ((import.meta as unknown as { env?: { BASE_URL?: string } }).env?.BASE_URL) || '/eldosh-motors/';
   const cleanBase = base.endsWith('/') ? base : `${base}/`;
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   return `${cleanBase}${cleanPath}`;
+
 };
 
